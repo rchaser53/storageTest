@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      window.onload = () => {
+        document.querySelector('#killStorageButton').addEventListener('click', () => {
+          let abc = '1234567890'
+          
+          // 5MB以上になり死ぬ
+          for (let i=0;i<1000000;i++){
+            sessionStorage.setItem(i.toString(),abc)
+          }
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <p>例外を投げる</p>
+    <button id="killStorageButton">kill storage!</button>
+  </body>
+</html>

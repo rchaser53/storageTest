@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "start": "node server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rchaser53/versusLegacy.git"
+  },
+  "devDependencies": {
+    "express": "^4.15.3"
+  }
+}
